@@ -8,11 +8,11 @@ app.set('view engine', 'ejs');
 // נוסיף את body-parser לפרויקט שלנו
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('home')
 })
 
-app.post('/home',(req,res)=>{
+app.post('/',(req,res)=>{
     res.render('home')
 })
 
